@@ -106,7 +106,7 @@ function DefaultFooter({ content }) {
               </MKBox>
             </Grid>
           ))}
-          <Grid item xs={12} sx={{ textAlign: "center", my: 3 }}>
+          <Grid item xs={12} sx={{ textAlign: "center", mb: 3 }}>
             {copyright}
           </Grid>
         </Grid>

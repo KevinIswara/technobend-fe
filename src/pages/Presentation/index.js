@@ -144,7 +144,7 @@ function Presentation() {
           </Container>
         </MKBox>
       </Card> */}
-      <MKBox pt={6} px={1} mt={6}>
+      <MKBox pt={2} mt={3}>
         <DefaultFooter content={footerRoutes} />
       </MKBox>
     </>
