@@ -38,7 +38,9 @@ function TypicalApplication() {
     <MKBox
       display="flex"
       alignItems="center"
-      py={6}
+      mt={-8}
+      pt={8}
+      pb={6}
       sx={{
         backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
           `${linearGradient(
