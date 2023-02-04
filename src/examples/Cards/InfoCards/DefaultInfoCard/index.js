@@ -13,17 +13,21 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
-
-// @mui material components
 import Icon from "@mui/material/Icon";
-
-// Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-function DefaultInfoCard({ color, icon, title, description, direction, small }) {
+function DefaultInfoCard({
+  color,
+  icon,
+  title,
+  description,
+  direction,
+  small,
+  titleColor,
+  descriptionColor,
+}) {
   return (
     <MKBox lineHeight={1} p={direction === "center" ? 2 : 0} textAlign={direction}>
       {typeof icon === "string" ? (
@@ -43,6 +47,7 @@ function DefaultInfoCard({ color, icon, title, description, direction, small }) 
         display="block"
         variant="5"
         fontWeight="bold"
+        color={titleColor}
         mt={direction === "center" ? 1 : 2}
         mb={1.5}
       >
@@ -51,7 +56,7 @@ function DefaultInfoCard({ color, icon, title, description, direction, small }) 
       <MKTypography
         display="block"
         variant={small ? "button" : "body2"}
-        color="text"
+        color={descriptionColor}
         pr={direction === "left" ? 6 : 0}
         pl={direction === "right" ? 6 : 0}
       >
@@ -61,14 +66,14 @@ function DefaultInfoCard({ color, icon, title, description, direction, small }) 
   );
 }
 
-// Setting default props for the DefaultInfoCard
 DefaultInfoCard.defaultProps = {
   color: "info",
   direction: "left",
   small: false,
+  titleColor: "dark",
+  descriptionColor: "text",
 };
 
-// Typechecking props for the DefaultInfoCard
 DefaultInfoCard.propTypes = {
   color: PropTypes.oneOf([
     "primary",
@@ -85,6 +90,17 @@ DefaultInfoCard.propTypes = {
   description: PropTypes.string.isRequired,
   direction: PropTypes.oneOf(["left", "right", "center"]),
   small: PropTypes.bool,
+  titleColor: PropTypes.string,
+  descriptionColor: PropTypes.oneOf([
+    "primary",
+    "secondary",
+    "info",
+    "success",
+    "warning",
+    "error",
+    "light",
+    "dark",
+  ]),
 };
 
 export default DefaultInfoCard;

@@ -16,19 +16,13 @@ Coded by www.creative-tim.com
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-
-// Material Kit 2 React components
+import Card from "@mui/material/Card";
+import Icon from "@mui/material/Icon";
 import MKBox from "components/MKBox";
-
-// Material Kit 2 React examples
-import RotatingCard from "examples/Cards/RotatingCard";
-import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
-import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
-
-// Images
-import bgFront from "assets/images/rotating-card-bg-front.jpeg";
-import bgBack from "assets/images/rotating-card-bg-back.jpeg";
+import MKTypography from "components/MKTypography";
+import MKButton from "components/MKButton";
+import catalogue from "assets/images/catalogue.jpg";
 
 function Information() {
   return (
@@ -36,62 +30,76 @@ function Information() {
       <Container>
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
           <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
-            <RotatingCard>
-              <RotatingCardFront
-                image={bgFront}
-                icon="touch_app"
-                title={
-                  <>
-                    Feel the
-                    <br />
-                    Material Kit
-                  </>
-                }
-                description="All the MUI components that you need in a development have been re-design with the new look."
-              />
-              <RotatingCardBack
-                image={bgBack}
-                title="Discover More"
-                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
-                action={{
-                  type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "start with header",
+            <MKBox sx={{ perspective: "50rem" }}>
+              <Card
+                sx={{
+                  backgroundColor: "transparent",
+                  boxShadow: "none",
+                  position: "relative",
+                  transformStyle: "preserve-3d",
+                  transition: "all 0.8s cubic-bezier(0.34, 1.45, 0.7, 1)",
                 }}
-              />
-            </RotatingCard>
+              >
+                <MKBox
+                  display="flex"
+                  justifyContent="center"
+                  alignContent="center"
+                  borderRadius="lg"
+                  width="100%"
+                  position="relative"
+                  zIndex={2}
+                  sx={{
+                    backgroundImage: ({
+                      palette: { gradients },
+                      functions: { linearGradient, rgba },
+                    }) =>
+                      `${linearGradient(
+                        rgba(gradients.info.main, 0.5),
+                        rgba(gradients.info.main, 0.5)
+                      )}, url(${catalogue})`,
+                    backgroundSize: "cover",
+                    backfaceVisibility: "hidden",
+                  }}
+                >
+                  <MKBox py={12} px={3} textAlign="center" lineHeight={1}>
+                    <MKTypography variant="h2" color="white" my={2}>
+                      <Icon>shopping_bag</Icon>
+                    </MKTypography>
+                    <MKTypography variant="h3" color="white" gutterBottom>
+                      Check Our Catalogue Now!
+                    </MKTypography>
+                    <MKButton color="white">Download Catalogue</MKButton>
+                  </MKBox>
+                </MKBox>
+              </Card>
+            </MKBox>
           </Grid>
           <Grid item xs={12} lg={7} sx={{ ml: "auto" }}>
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="content_copy"
-                  title="Full Documentation"
-                  description="Built by developers for developers. Check the foundation and you will find
-                    everything inside our documentation."
+                  title="Best Technologies"
+                  description="We used high frequency induction bending for the best quality of pipe and BW fitting for more flexible route."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="flip_to_front"
-                  title="MUI Ready"
-                  description="The world's most popular react components library for building user interfaces."
+                  title="Best Result"
+                  description="We can solve the most challenging problems with out high-end engineering solutions to pipeline routine designs."
                 />
               </Grid>
             </Grid>
             <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="price_change"
-                  title="Save Time & Money"
-                  description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
+                  title="Customer First"
+                  description="We offer professional, high-quality, and trustworthy products & services"
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="devices"
-                  title="Fully Responsive"
-                  description="Regardless of the screen size, the website content will naturally fit the given resolution."
+                  title="Easy to apply"
+                  description="Tell us what you need and we provide you the best design & materials selection for you to choose"
                 />
               </Grid>
             </Grid>
