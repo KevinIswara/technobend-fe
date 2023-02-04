@@ -20,7 +20,7 @@ function Headers() {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      minHeight="80vh"
+      minHeight="90vh"
       width="100%"
     >
       <Container>
