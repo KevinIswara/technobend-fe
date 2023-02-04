@@ -1,10 +1,10 @@
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import bgImage from "assets/images/bg-typical-application.jpg";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
-import bgImage from "assets/images/bg-typical-application.jpg";
-import typicalApplicationImage from "assets/images/typical-application-1.jpg";
+import TypicalApplicationCarousel from "./TypicalApplicationCarousel";
 
 function TypicalApplication() {
   const datas = [
@@ -33,6 +33,7 @@ function TypicalApplication() {
       description: "",
     },
   ];
+
   return (
     <MKBox
       display="flex"
@@ -41,8 +42,8 @@ function TypicalApplication() {
       sx={{
         backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
           `${linearGradient(
-            rgba(gradients.dark.main, 0.6),
-            rgba(gradients.dark.state, 0.6)
+            rgba(gradients.dark.main, 0.8),
+            rgba(gradients.dark.state, 0.8)
           )}, url(${bgImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -73,16 +74,10 @@ function TypicalApplication() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid container item xs={12} lg={6}>
-            <MKBox
-              component="img"
-              src={typicalApplicationImage}
-              borderRadius="lg"
-              shadow="md"
-              width="90%"
-              position="relative"
-              zIndex={1}
-            />
+          <Grid container item xs={12} lg={5}>
+            <MKBox borderRadius="lg" shadow="md" width="100%" position="relative">
+              <TypicalApplicationCarousel />
+            </MKBox>
           </Grid>
         </Grid>
       </Container>
