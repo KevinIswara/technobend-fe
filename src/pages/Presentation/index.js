@@ -7,6 +7,7 @@ import Information from "pages/Presentation/sections/Information";
 import routes from "routes";
 import footerRoutes from "footer.routes";
 import Headers from "./sections/Headers";
+import TypicalApplication from "./sections/TypicalApplication";
 
 function Presentation() {
   return (
@@ -27,6 +28,7 @@ function Presentation() {
         <Highlights />
         <Information />
       </Card>
+      <TypicalApplication />
       {/* <Card
         sx={{
           p: 2,
