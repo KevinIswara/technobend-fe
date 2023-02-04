@@ -94,7 +94,7 @@ const routes = [
     collapse: [
       {
         name: "Technical",
-        description: "All information about how we work",
+        description: "All information about how we work.",
         href: "/",
       },
       {
@@ -104,7 +104,7 @@ const routes = [
       },
       {
         name: "Warranty",
-        description: "Learn more about our warranty",
+        description: "Learn more about our warranty.",
         href: "/",
       },
       {
