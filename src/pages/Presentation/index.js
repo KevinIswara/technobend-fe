@@ -6,7 +6,7 @@ import Highlights from "pages/Presentation/sections/Highlights";
 import Information from "pages/Presentation/sections/Information";
 import routes from "routes";
 import footerRoutes from "footer.routes";
-import Headers from "./components/Headers";
+import Headers from "./sections/Headers";
 
 function Presentation() {
   return (
