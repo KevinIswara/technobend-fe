@@ -17,20 +17,20 @@ function TypicalApplication() {
       description: "We can provide all the ancillary equipment required for any boiler.",
     },
     {
-      title: "Gathering stations, Process Piping & Drain lines",
+      title: "Gathering stations, process piping & drain lines",
       description: "Let us analyze and provide you the solutions.",
     },
     {
-      title: "Pulp & Paper, Refineries, Petrochemicals & Power plants",
-      description: "",
-    },
-    {
-      title: "Firewater system, waste water treatment, & Plumbing",
-      description: "",
-    },
-    {
       title: "Offshore Platform",
-      description: "",
+      description: "Les us handle your offshore structure facilities.",
+    },
+    {
+      title: "Firewater system, waste water treatment, & plumbing",
+      description: "We can provide you the best sewage or water treatment plant.",
+    },
+    {
+      title: "Others",
+      description: "We can handle pulp & paper, refineries, petrochemicals & power plants too!",
     },
   ];
 
