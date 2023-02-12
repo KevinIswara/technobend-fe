@@ -9,8 +9,8 @@ function ProductItem({ image, name, description, ...rest }) {
       bgColor="white"
       borderRadius="xl"
       shadow="lg"
-      minHeight="7rem"
-      maxHeight="7rem"
+      minHeight="10rem"
+      maxHeight="10rem"
       sx={{
         overflow: "hidden",
         transform: "perspective(999px) rotateX(0deg) translate3d(0, 0, 0)",
@@ -30,6 +30,8 @@ function ProductItem({ image, name, description, ...rest }) {
         src={`data:image/jpeg;base64,${image}`}
         alt={name}
         width="100%"
+        minHeight="10rem"
+        maxHeight="10rem"
         sx={{ objectFit: "cover" }}
       />
     </MKBox>
