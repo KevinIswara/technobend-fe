@@ -6,7 +6,7 @@ import bgImage from "assets/images/induction-bending-information.jpg";
 function ProductRange() {
   return (
     <Card>
-      <MKBox position="relative" borderRadius="lg" mx={2} mt={-3}>
+      <MKBox position="relative" borderRadius="lg" mx={2} mt={2}>
         <MKBox
           component="img"
           src={bgImage}
