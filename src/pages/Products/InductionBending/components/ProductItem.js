@@ -3,7 +3,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-function ProductItem({ image, name, description, ...rest }) {
+function ProductItem({ image, name, description, onClick, index, ...rest }) {
   const imageTemplate = (
     <MKBox
       bgColor="white"
@@ -33,6 +33,7 @@ function ProductItem({ image, name, description, ...rest }) {
         minHeight="10rem"
         maxHeight="10rem"
         sx={{ objectFit: "cover" }}
+        onClick={() => onClick(index)}
       />
     </MKBox>
   );
@@ -64,6 +65,8 @@ ProductItem.propTypes = {
   image: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+  index: PropTypes.number.isRequired,
 };
 
 export default ProductItem;

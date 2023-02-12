@@ -2,7 +2,7 @@ import { Container, Grid } from "@mui/material";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import data from "pages/Products/InductionBending/data/inductionBendingDatas";
-import ProductItem from "./ProductItem";
+import ProductItems from "./ProductItems";
 
 function Products() {
   const renderData = data.map(({ title, description, items }) => (
@@ -18,13 +18,7 @@ function Products() {
         </MKBox>
       </Grid>
       <Grid item xs={12} lg={9}>
-        <Grid container spacing={3}>
-          {items.map(({ image, name, description: imageDescription }) => (
-            <Grid item xs={12} md={4} sx={{ mb: 2 }} key={name}>
-              <ProductItem image={image} name={name} description={imageDescription} />
-            </Grid>
-          ))}
-        </Grid>
+        <ProductItems items={items} />
       </Grid>
     </Grid>
   ));
