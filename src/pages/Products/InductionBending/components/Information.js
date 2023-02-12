@@ -6,7 +6,7 @@ import ProductRange from "./ProductRange";
 
 function Information() {
   return (
-    <MKBox className="information" id="information" component="section" py={10}>
+    <MKBox className="information" id="information" component="section" pt={10} pb={7}>
       <Container>
         <MKTypography variant="h3" fontWeight="bold">
           Induction Heating

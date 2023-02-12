@@ -1,9 +1,10 @@
+import { Divider } from "@mui/material";
 import Card from "@mui/material/Card";
 import MKBox from "components/MKBox";
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
-import routes from "routes";
+import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import footerRoutes from "footer.routes";
+import routes from "routes";
 import Headers from "./components/Headers";
 import Information from "./components/Information";
 import Products from "./components/Products";
@@ -23,6 +24,7 @@ function InductionBending() {
         }}
       >
         <Information />
+        <Divider sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
         <Products />
       </Card>
       <MKBox pt={6} px={1} mt={6}>
