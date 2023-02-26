@@ -12,9 +12,7 @@ import TypicalApplication from "./sections/TypicalApplication";
 function Presentation() {
   return (
     <>
-      <MKBox bgColor="white" shadow="sm" py={0.25}>
-        <DefaultNavbar routes={routes} transparent relative />
-      </MKBox>
+      <DefaultNavbar routes={routes} transparent relative sticky />
       <Headers />
       <Card
         sx={{
