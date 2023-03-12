@@ -23,7 +23,6 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 // @mui material components
-import Container from "@mui/material/Container";
 import Icon from "@mui/material/Icon";
 import Popper from "@mui/material/Popper";
 import Grow from "@mui/material/Grow";
@@ -449,7 +448,11 @@ function DefaultNavbar({ brand, routes, transparent, light, sticky, relative, ce
   );
 
   return (
-    <Container sx={sticky ? { position: "sticky", top: 0, zIndex: 10 } : null}>
+    <MKBox
+      sx={sticky ? { position: "sticky", top: 0, zIndex: 10 } : null}
+      bgColor={light ? "#6b6b6b" : "white"}
+      shadow="sm"
+    >
       <MKBox
         py={1}
         px={{ xs: 4, sm: transparent ? 2 : 3, lg: transparent ? 0 : 2 }}
@@ -467,13 +470,7 @@ function DefaultNavbar({ brand, routes, transparent, light, sticky, relative, ce
         })}
       >
         <MKBox display="flex" justifyContent="space-between" alignItems="center">
-          <MKBox
-            component={Link}
-            to="/"
-            lineHeight={1}
-            py={transparent ? 1.5 : 0.75}
-            pl={relative || transparent ? 0 : { xs: 0, lg: 1 }}
-          >
+          <MKBox component={Link} to="/" lineHeight={1} py={transparent ? 1.5 : 0.75} pl={3}>
             <MKTypography variant="button" fontWeight="bold" color={light ? "white" : "dark"}>
               {brand}
             </MKTypography>
@@ -509,7 +506,7 @@ function DefaultNavbar({ brand, routes, transparent, light, sticky, relative, ce
       </MKBox>
       {dropdownMenu}
       {nestedDropdownMenu}
-    </Container>
+    </MKBox>
   );
 }
 

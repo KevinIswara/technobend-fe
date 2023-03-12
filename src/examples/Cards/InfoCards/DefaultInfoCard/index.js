@@ -30,19 +30,20 @@ function DefaultInfoCard({
 }) {
   return (
     <MKBox lineHeight={1} p={direction === "center" ? 2 : 0} textAlign={direction}>
-      {typeof icon === "string" ? (
-        <MKTypography
-          display="block"
-          variant={direction === "center" ? "h2" : "h3"}
-          color={color}
-          textGradient
-        >
-          {" "}
-          <Icon>{icon}</Icon>{" "}
-        </MKTypography>
-      ) : (
-        icon
-      )}
+      {icon &&
+        (typeof icon === "string" ? (
+          <MKTypography
+            display="block"
+            variant={direction === "center" ? "h2" : "h3"}
+            color={color}
+            textGradient
+          >
+            {" "}
+            <Icon>{icon}</Icon>{" "}
+          </MKTypography>
+        ) : (
+          icon
+        ))}
       <MKTypography
         display="block"
         variant="5"
@@ -71,7 +72,8 @@ DefaultInfoCard.defaultProps = {
   direction: "left",
   small: false,
   titleColor: "dark",
-  descriptionColor: "text",
+  descriptionColor: "dark",
+  icon: null,
 };
 
 DefaultInfoCard.propTypes = {
@@ -85,7 +87,7 @@ DefaultInfoCard.propTypes = {
     "light",
     "dark",
   ]),
-  icon: PropTypes.node.isRequired,
+  icon: PropTypes.node,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   direction: PropTypes.oneOf(["left", "right", "center"]),
