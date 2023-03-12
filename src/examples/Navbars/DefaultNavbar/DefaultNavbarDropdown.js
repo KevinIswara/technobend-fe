@@ -87,7 +87,7 @@ function DefaultNavbarDropdown({
           </Icon>
         </MKTypography>
       </MKBox>
-      {children && (
+      {children.props && children.props.children && (
         <Collapse in={Boolean(collapseStatus)} timeout={400} unmountOnExit>
           {children}
         </Collapse>

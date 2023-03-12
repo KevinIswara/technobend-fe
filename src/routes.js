@@ -14,23 +14,29 @@ Coded by www.creative-tim.com
 */
 
 import Icon from "@mui/material/Icon";
+import InductionBending from "pages/Products/InductionBending";
 
 const routes = [
   {
     name: "Products",
     icon: <Icon>dashboard</Icon>,
+    route: "/products/induction-hot-bend",
+    component: <InductionBending />,
     collapse: [
       {
         name: "API 5L/ASME B16.49 Induction Hot Bend",
-        href: "/",
+        route: "/products/induction-hot-bend",
+        component: <InductionBending />,
       },
       {
         name: "Ordering Information",
-        href: "/",
+        route: "/products/order",
+        component: <InductionBending />,
       },
       {
         name: "ASTM A234 BW Fittings",
-        href: "/",
+        route: "/products/bw-fittings",
+        component: <InductionBending />,
       },
     ],
   },
