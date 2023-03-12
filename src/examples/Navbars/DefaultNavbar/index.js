@@ -41,6 +41,8 @@ import DefaultNavbarMobile from "examples/Navbars/DefaultNavbar/DefaultNavbarMob
 // Material Kit 2 React base styles
 import breakpoints from "assets/theme/base/breakpoints";
 
+import logo from "assets/images/logo-technobend.png";
+
 function DefaultNavbar({ brand, routes, transparent, light, sticky, relative, center }) {
   const [dropdown, setDropdown] = useState("");
   const [dropdownEl, setDropdownEl] = useState("");
@@ -470,11 +472,11 @@ function DefaultNavbar({ brand, routes, transparent, light, sticky, relative, ce
         })}
       >
         <MKBox display="flex" justifyContent="space-between" alignItems="center">
-          <MKBox component={Link} to="/" lineHeight={1} py={transparent ? 1.5 : 0.75} pl={3}>
-            <MKTypography variant="button" fontWeight="bold" color={light ? "white" : "dark"}>
-              {brand}
-            </MKTypography>
-          </MKBox>
+          {brand && (
+            <MKBox component={Link} to="/" lineHeight={1} py={0.75} px="0.5em">
+              <MKBox component="img" src={logo} lineHeight={1} width="auto" height="25px" />
+            </MKBox>
+          )}
           <MKBox
             color="inherit"
             display={{ xs: "none", lg: "flex" }}
