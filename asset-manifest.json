@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.js": "/technobend-fe/static/js/main.0d838c01.chunk.js",
-    "main.js.map": "/technobend-fe/static/js/main.0d838c01.chunk.js.map",
+    "main.js": "/technobend-fe/static/js/main.d4e2863c.chunk.js",
+    "main.js.map": "/technobend-fe/static/js/main.d4e2863c.chunk.js.map",
     "runtime-main.js": "/technobend-fe/static/js/runtime-main.41acb58a.js",
     "runtime-main.js.map": "/technobend-fe/static/js/runtime-main.41acb58a.js.map",
-    "static/js/2.9d61c36e.chunk.js": "/technobend-fe/static/js/2.9d61c36e.chunk.js",
-    "static/js/2.9d61c36e.chunk.js.map": "/technobend-fe/static/js/2.9d61c36e.chunk.js.map",
+    "static/js/2.a101da86.chunk.js": "/technobend-fe/static/js/2.a101da86.chunk.js",
+    "static/js/2.a101da86.chunk.js.map": "/technobend-fe/static/js/2.a101da86.chunk.js.map",
     "index.html": "/technobend-fe/index.html",
-    "static/js/2.9d61c36e.chunk.js.LICENSE.txt": "/technobend-fe/static/js/2.9d61c36e.chunk.js.LICENSE.txt",
+    "static/js/2.a101da86.chunk.js.LICENSE.txt": "/technobend-fe/static/js/2.a101da86.chunk.js.LICENSE.txt",
     "static/media/bg-typical-application.a05b7dae.jpg": "/technobend-fe/static/media/bg-typical-application.a05b7dae.jpg",
     "static/media/catalogue.3daa7dcd.jpg": "/technobend-fe/static/media/catalogue.3daa7dcd.jpg",
+    "static/media/induction-bending-header.2da191ea.jpg": "/technobend-fe/static/media/induction-bending-header.2da191ea.jpg",
+    "static/media/induction-bending-information.f3095695.jpg": "/technobend-fe/static/media/induction-bending-information.f3095695.jpg",
     "static/media/landing-page-background.ecfc3676.jpg": "/technobend-fe/static/media/landing-page-background.ecfc3676.jpg",
+    "static/media/logo-technobend.29298f7e.png": "/technobend-fe/static/media/logo-technobend.29298f7e.png",
     "static/media/typical-application-1.a8889252.jpg": "/technobend-fe/static/media/typical-application-1.a8889252.jpg",
     "static/media/typical-application-2.ecb5c8ee.jpg": "/technobend-fe/static/media/typical-application-2.ecb5c8ee.jpg",
     "static/media/typical-application-3.8a897b61.jpg": "/technobend-fe/static/media/typical-application-3.8a897b61.jpg",
@@ -18,7 +21,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.41acb58a.js",
-    "static/js/2.9d61c36e.chunk.js",
-    "static/js/main.0d838c01.chunk.js"
+    "static/js/2.a101da86.chunk.js",
+    "static/js/main.d4e2863c.chunk.js"
   ]
 }
