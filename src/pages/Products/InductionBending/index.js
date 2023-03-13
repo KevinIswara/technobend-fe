@@ -12,7 +12,7 @@ import Products from "./components/Products";
 function InductionBending() {
   return (
     <>
-      <DefaultNavbar routes={routes} transparent light />
+      <DefaultNavbar routes={routes} transparent relative sticky />
       <Headers />
       <Card
         sx={{
