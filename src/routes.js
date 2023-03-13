@@ -20,9 +20,12 @@ const routes = [
   {
     name: "Products",
     icon: <Icon>dashboard</Icon>,
-    route: "/products/induction-hot-bend",
-    component: <InductionBending />,
     collapse: [
+      {
+        name: "Overview",
+        route: "/products/induction-hot-bend",
+        component: <InductionBending />,
+      },
       {
         name: "API 5L/ASME B16.49 Induction Hot Bend",
         route: "/products/induction-hot-bend",
