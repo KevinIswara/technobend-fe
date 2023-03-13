@@ -107,37 +107,37 @@ export default [
       },
     ],
   },
-  {
-    title: "ASTM A312 TP304SS Induction Bends",
-    description: "",
-    items: [
-      {
-        image: "",
-        name: "180deg-Induction-Bends-2",
-        description: "",
-      },
-    ],
-  },
-  {
-    title: "LSAW Induction Bends",
-    description: "",
-    items: [
-      {
-        image: "",
-        name: "180deg-Induction-Bends-2",
-        description: "",
-      },
-    ],
-  },
-  {
-    title: "ERW Induction Bends",
-    description: "",
-    items: [
-      {
-        image: "",
-        name: "180deg-Induction-Bends-2",
-        description: "",
-      },
-    ],
-  },
+  // {
+  //   title: "ASTM A312 TP304SS Induction Bends",
+  //   description: "",
+  //   items: [
+  //     {
+  //       image: "",
+  //       name: "180deg-Induction-Bends-2",
+  //       description: "",
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "LSAW Induction Bends",
+  //   description: "",
+  //   items: [
+  //     {
+  //       image: "",
+  //       name: "180deg-Induction-Bends-2",
+  //       description: "",
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "ERW Induction Bends",
+  //   description: "",
+  //   items: [
+  //     {
+  //       image: "",
+  //       name: "180deg-Induction-Bends-2",
+  //       description: "",
+  //     },
+  //   ],
+  // },
 ];
